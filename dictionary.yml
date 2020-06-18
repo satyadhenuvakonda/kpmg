@@ -1,0 +1,10 @@
+dic = {'a':{'b':{'c':'d'}}} #nested object
+x = 'a/b/c' #key_value
+
+y = x.split('/')
+m = dic[y[0]]
+for a in y:
+    if a == y[0]:
+        continue
+    m = m[a]
+print(m)
